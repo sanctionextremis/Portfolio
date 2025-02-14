@@ -8,13 +8,13 @@
 body {
     color: rgb(23, 30, 29);
     font-family: Calibri, Helvetica, sans-serif;
-    background-color: rgba(156, 228, 219, 0.4);
+    background-color: rgba(248, 140, 87, 0.4);
 }
 
 /* HEADER SECTION*/
 header {
 padding: 16px 16px;
-background-color:rgb(184, 157, 143);
+background-color:rgb(244, 138, 96);
 position: -webkit-sticky;
 position: sticky;
 top: 0;
