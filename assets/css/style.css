@@ -1,7 +1,56 @@
-body {
-    background-color: yellow;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    color: rgb(107, 142, 155);
+    font-family: Calibri, Helvetica, sans-serif;
+}
+
+/* HEADER SECTION*/
 header {
-    font-size: 100px;
+padding: 10px 3px;
+background-color:rgb(184, 157, 143);
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 32px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER NAV SECTION */
+
+header nav {
+    margin: 10px 12px;
+}
+
+header a {
+    text-decoration: none;
+    color: blue;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    
+}
+
+header ul li a {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 16px;
 }
