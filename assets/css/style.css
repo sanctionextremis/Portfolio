@@ -95,8 +95,8 @@ section {
 
 .project-sources {
     display: flex;
-    flex-wrap:nowrap;
-    justify-content:space-evenly;
+    flex-wrap:wrap;
+    justify-content: space-around;
     flex-direction: row;
     text-align: center;
     margin: 20px 20px;
