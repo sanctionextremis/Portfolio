@@ -3,7 +3,6 @@
     box-sizing: border-box;
     color: inherit;
     text-decoration: none;
-    
 }
 
 body {
@@ -24,7 +23,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
-    border: white solid 2px;
 }
 
 header h1 {
@@ -32,8 +30,8 @@ header h1 {
     font-size: 32px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    color: rgb(62, 126, 71);
+    justify-content: flex-start;
+    color: rgb(249, 250, 249);
 }
 
 /* HEADER NAV SECTION */
@@ -44,7 +42,7 @@ header nav {
 
 header a {
     text-decoration: none;
-    color: rgb(62, 126, 71);
+    color: rgb(249, 250, 250);
     text-align: right;
 
 }
@@ -52,16 +50,24 @@ header a {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:flex-end;
     align-items: center;
     list-style: none;  
+}
+
+header ul li:hover{
+    background: rgba(255, 255, 255, 0.3);
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 header ul li a {
     padding: 10px 10px;
     font-weight: bold;
-    font-size: 16px;
-}
+    font-size: 20px;
+}  
+
 
 /* BODY SECTION BEGINS */
 
@@ -101,6 +107,13 @@ section {
     margin: 20px 20px;
 }
 
+.run:hover, .code:hover, .placeholder:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 .project-sources {
     display: flex;
     flex-wrap: wrap;
@@ -115,6 +128,13 @@ section {
     flex-direction: row;
     text-align: center;
     margin-left: 215px;
+}
+
+.html-1:hover, .css-1:hover, .js-1:hover, .python-1:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 .extras-rows {
@@ -156,4 +176,25 @@ div {
 
 .one {
     display: inline-block;
+}
+
+p {
+    font-size 16px;
+    font-weight:bold
+}
+
+* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    .section-two {
+        position: relative;
+        }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
 }
