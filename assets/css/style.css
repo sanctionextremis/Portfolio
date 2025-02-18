@@ -55,17 +55,18 @@ header nav ul {
     list-style: none;  
 }
 
-header ul li:hover{
+header ul a:hover{
     background: rgba(255, 255, 255, 0.3);
-    color: #024e76;
-    border-radius: 15px;
+    color: #040404;
+    border-radius: 7px;
     text-shadow: none;
 }
 
 header ul li a {
-    padding: 10px 10px;
+    
     font-weight: bold;
     font-size: 20px;
+    margin: 10px 10px;
 }  
 
 
@@ -181,6 +182,10 @@ div {
 p {
     font-size 16px;
     font-weight:bold
+}
+
+.footer {
+    text-align: center;
 }
 
 * MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
