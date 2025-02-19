@@ -70,14 +70,16 @@ header ul a:hover{
 }
 
 header ul li a {
-    
     font-weight: bold;
     font-size: 20px;
     margin: 10px 10px;
 }  
 
-li, .scroll {
-    scroll-margin-top: 50px;
+#intro, #contact, #projects, #languages {
+    padding-top: 150px;
+    margin-top: -100px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
 }
 
 
@@ -90,6 +92,7 @@ section {
 }
 
 .section-one {
+    color: black;
     display: flex;
     flex-wrap: nowrap;
     justify-content:space-evenly;
@@ -200,20 +203,30 @@ p {
     text-align: center;
 }
 
-* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    .all-sections {
-        display: flex;
-        justify-content: center;
-        }
+    body {
+        display: inline-block;
+
     }
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-
+    body {
+        display: inline-block;
+    }
+    .projects {
+        display: flex;
+        justify-content: center;
+    }
 }
+
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    
+    body {
+    display: inline-block;
+    margin: auto;
+    }
 }
